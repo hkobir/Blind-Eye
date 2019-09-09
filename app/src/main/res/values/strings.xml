@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BlindEye</string>
+    <string name="passrequest">Password Request Mode</string>
+    <string name="passinput">Enter Password</string>
+    <string name="confirmpassinput">Confirm Password</string>
+    <string name="loginEnter">Enter</string>
+    <string name="version">Version: 3.1.0.0</string>
+    <string name="copyright">Copyright: Hkobir</string>
+    <string name="trademark">Trademark: HK47</string>
+    <string name="email">hkobir10@gmail.com</string>
+
+
+    <string name="helpText">::::: Write your plain/cipher message on given textField (Encryption Menu) then obtain  cipher message by encryption and copy your message
+        by pressing copy button .Then you also can obtain plain text by go to decryption menu and paste your cipher text. Then click decryption button for plaintext .
+        Finally you can obtain both plain/cipher message according to encryption/decryption menu Vice-Versa</string>
+
+</resources>

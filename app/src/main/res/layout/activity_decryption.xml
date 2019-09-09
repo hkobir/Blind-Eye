@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/decryptLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".EncryptionActivity">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/customToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:onClick="backPrevious"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:text="Decryption"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="all word of the message should be uppercase"
+            android:textColor="#FF6D00"
+            android:textSize="13sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/ciphertextET"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext_focus"
+                android:hint="Enter your plain message"
+                />
+            <ImageView
+                android:id="@+id/clearTextButton"
+                android:clickable="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/cleartext"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/decryptionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:text="Decryption"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plain Text"
+            android:textAlignment="center"
+            android:background="#FDD603"
+            android:textColor="#0C0A00"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/displayPlaintext"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_textview_back"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:text=""
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy message "
+                android:textColor="#2E1F01"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"/>
+            <ImageView
+                android:id="@+id/copyPmessageBtn"
+                android:clickable="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_content_copy"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</layout>
